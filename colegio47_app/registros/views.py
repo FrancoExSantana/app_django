@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
 from django.db import IntegrityError
+from .forms import CustomUserCreationForm
 # Create your views here.
 
 
@@ -11,11 +12,12 @@ def home(request):
 
 
 def signup(request):
+    data = {
+        'form': CustomUserCreationForm()
+    }
 
     if request.method == 'GET':
-        return render(request, 'signup.html', {
-            'form': UserCreationForm
-        })
+        return render(request, 'signup.html', data)
     else:
         if request.POST['password1'] == request.POST['password2']:
             try:
@@ -25,13 +27,11 @@ def signup(request):
                 login(request, user)
                 return redirect('homepage')
             except IntegrityError:
-                return render(request, 'signup.html', {
-                    'form': UserCreationForm,
+                return render(request, 'signup.html', data, {
                     'error': 'El usuario creado ya existe'
                 })
 
-        return render(request, 'signup.html', {
-            'form': UserCreationForm,
+        return render(request, 'signup.html', data, {
             'error': 'Las contraseñas no coinciden'
         })
 

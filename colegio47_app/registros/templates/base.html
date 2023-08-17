@@ -1,31 +1,36 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Colegio Superior N°47 Florentino Ameghino</title>
-</head>
-<body>
-    <nav>
-        <ul>
-            {%  if user.is_authenticated %}
-            <li>
-                <a href="/homepage">homepage</a>
-            </li>
-            <li>
-                <a href="/logout">logout</a>
-            </li>
-            {% else %}
-            <li>
-                <a href="/signup">signup</a>
-            </li>
-            <li>
-                <a href="/signin">signin</a>
-            </li>
-            {% endif %}
-        </ul>
+    <link rel="stylesheet" href="{% static '/styles/main.css' %}" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        {% if user.is_authenticated %}
+        <li>
+          <a href="/homepage">Inicio</a>
+        </li>
+        <li>
+          <a href="/logout">Cerrar Sesion</a>
+        </li>
+        {% else %}
+        <li>
+          <a href="/signin">Iniciar</a>
+        </li>
+        <li>
+          <a href="/signup">Registrarse</a>
+        </li>
+        {% endif %}
+      </ul>
     </nav>
-    {% block content %}
-    {% endblock %}
-</body>
+    <main class="container">
+      {% block content %} {% endblock %}
+    </main>
+
+  </body>
 </html>

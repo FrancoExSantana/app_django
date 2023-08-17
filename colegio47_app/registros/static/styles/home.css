@@ -1,0 +1,45 @@
+body {
+    background: #031926;
+    color: #E9E9E9;
+}
+
+main h1 {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonA {
+    width: 200px;
+    background: #468189;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonB {
+    width: 200px;
+    background: #9BDEBB;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button a{
+    text-decoration: none;
+    color: #031926;
+}
+
+.container {
+    text-align: center;
+    border-radius: 5px;
+    max-width: 750px;
+    background: linear-gradient(#77ACA2, #468189, #031926);
+    margin: auto;
+}
+
+div {
+    text-align: center;
+}
