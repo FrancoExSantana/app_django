@@ -20,7 +20,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 .buttonB {
     width: 200px;
-    background: #9BDEBB;
+    background: rgb(155, 222, 187);
     border: 0px;
     border-radius: 5px;
     padding: 10px;
