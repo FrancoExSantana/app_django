@@ -1,13 +1,14 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+from django.http import HttpResponse, JsonResponse
+from .models import Project, Task
 
-def index(request):
-    return HttpResponse("index page")
-def hello(request, username):
-    return HttpResponse("<h2>hello %s</h2>" % username)
+
+def homepage(request):
+    return render(request, 'homepage.html')
+
 
 def about(request):
-    return HttpResponse('About')
-
+    return render(request, 'about.html')
 
 
                    
