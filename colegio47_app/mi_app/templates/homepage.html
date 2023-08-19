@@ -1,19 +1,151 @@
 {% load static %}
-<link rel="stylesheet" href="{% static '/styles/estilos.css' %}">
-<link rel="stylesheet" href="{% static '/styles/fonts.css' %}">
+<html>
+    <link rel="stylesheet" href="{% static '/styles/estilos.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/fonts.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/main.css' %}" />
+<head>
+    <title>Menú</title>
+</head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+<html>
+    <header>
+        <h1>Colegio Superior N°47 Florentino Ameghino</h1>
+    </header>
+<head>
+    <title>Menú del Colegio</title>
+</head>
 <header>
     <div class="menu_bar">
         <a href="#" class="bt-menu"><span class="icon-list2"></span>Menu</a>
+        <body>
+            
+        </body>
     </div>
 
-    <nav class="">
+    <nav>
         <ul>
             <li><a href="#"><span class="icon-house"></span>Inicio</a></li>
-            <li><a href="#"><span class="icon-suitcase"></span>Trabajos</a></li>
-            <li><a href="#"><span class="icon-rocket"></span>Proyectos</a></li>
-            <li><a href="#"><span class="icon-earth"></span>Servicios</a></li>
-            <li><a href="#"><span class="icon-mail"></span>Contactos</a></li>
+            <li><a href="#"><span class="icon-suitcase"></span>Calendario</a></li>
+            <li><a href="#"><span class="icon-rocket"></span>Materias</a></li>
+            <li><a href="#"><span class="icon-earth"></span>Mesas</a></li>
+            <li><a href="#"><span class="icon-mail"></span>Ajustes</a></li>
         </ul>
     </nav>
-</header>
+
+        </div>
+        <style>
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+            }
+            nav {
+                background: linear-gradient(#468189,#77ACA2,#77ACA2);
+                overflow: hidden;
+                padding: 15px 0;
+                border-radius: 5px;
+            }
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+            }
+            nav li {
+                margin: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #f91b1b;
+            }
+            main {
+                color: #c02424;
+                text-align: center;
+            }
+            @media screen and (max-width: 768px) {
+                nav ul {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                nav li {
+                    margin: 10px 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
     
+        
+        <main>
+            <section id="inicio">
+        
+                <style>
+                    body {
+                        margin: 0;
+                        padding: 0;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                    .news-container {
+                        max-width: 800px;
+                        margin: 20px auto;
+                        padding: 20px;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        border-radius: 5px;
+                    }
+                    .news-header {
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                        background: linear-gradient(#468189,#77ACA2);
+                        padding: 1px 0;
+                        border-radius: 5px;
+                    }
+                    .news-item {
+                        margin-bottom: 20px;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid #000000;
+                    }
+                    .news-title {
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                    }
+                    .news-content {
+                        font-size: 14px;
+                        color: #E9E9E9;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="news-container">
+                    <div class="news-header"><h3>Últimas Noticias</h3></div>
+                    <div class="news-item">
+                        <div class="news-title">JUNCOS PUTO </div>
+                        <div class="news-content">HOY NO ME PRESENTO A CLASE ;P</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-title">Título de la Noticia 2</div>
+                        <div class="news-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-title">Título de la Noticia 3</div>
+                        <div class="news-content">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</div>
+                    </div>
+                </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 Colegio XYZ. Todos los derechos reservados.</p>
+        </footer>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js'></script>
+        <script>
+            
+        </script>
+    </body>
+    </html>

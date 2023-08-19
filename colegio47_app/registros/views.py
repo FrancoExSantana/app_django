@@ -25,7 +25,7 @@ def signup(request):
                     username=request.POST['username'], password=request.POST['password1'])
                 user.save()
                 login(request, user)
-                return redirect('homepage')
+                return redirect('inicio')
             except IntegrityError:
                 return render(request, 'signup.html', data, {
                     'error': 'El usuario creado ya existe'
@@ -34,11 +34,6 @@ def signup(request):
         return render(request, 'signup.html', data, {
             'error': 'Las contraseñas no coinciden'
         })
-
-
-def homepage(request):
-    return render(request, 'homepage.html')
-
 
 def signout(request):
     logout(request)
@@ -54,10 +49,10 @@ def signin(request):
         user = authenticate(
             request, username=request.POST['username'], password=request.POST['password'])
         if user is None:
-            return render(request, 'sigin.html', {
+            return render(request, 'signin.html', {
                 'form': AuthenticationForm,
                 'error': 'El usuario o la contraseña son incorrectos'
             })
         else: 
             login(request, user)
-            return redirect('homepage')
+            return redirect('inicio')
