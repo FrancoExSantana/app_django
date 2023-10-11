@@ -1,11 +1,17 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
 
 def homepage(request):
-    return render(request, 'homepage.html')
+    return render(request,'homepage.html')
 
-def about(request):
-    return render(request, 'about.html')
+def materias(request):
+    return render(request,'materias.html')
+
+def calendario(request):
+    return render(request,'calendario.html')
+
+def inscripciones(request):
+    return render(request,'inscripciones')
 
 
                    
