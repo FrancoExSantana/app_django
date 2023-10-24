@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colegio Superior N°47 Florentino Ameghino</title>
+    <link rel="stylesheet" href="{% static '/styles/home.css' %}">
+  </head>
+  <body>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+    <main class="container">
+      <h1>Registrarse</h1>
+
+      {{error}}
+
+      <form action="/signup/" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button class="buttonB">Aceptar</button>
+      </form>
+    </main>
+  </body>
+</html>

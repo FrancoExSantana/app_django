@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Materias</h1>
+    {% csrf_token %}
+    
+    {{form}}
+
+    <button>
+        Guardar
+    </button>
+
+{% endblock %}

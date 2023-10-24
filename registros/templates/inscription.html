@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+	<title>Formulario de inscripción</title>
+	<script src="ruta/al/archivo.js"></script>
+</head>
+<body>
+	<label for="career">Carrera:</label>
+	<select id="career" name="career">
+		<option value="primero_analista">Primero, Analista De Sistemas</option>
+    <option value="segundo_analista">Segundo, Analista De Sistemas</option>
+    <option value="tercero_analista">Tercero, Analista De Sistemas</option>
+		<option value="primero_infraestructura">Primero, Infraestructura y Redes</option>
+    <option value="segundo_infraestructura">Segundo, Infraestructura y Redes</option>
+    <option value="tercero_infraestructura">Tercero, Infraestructura y Redes</option>
+		<option value="primero_comercializacion">Primero, Comercializacion</option>
+    <option value="segundo_comercializacion">Segundo, Comercializacion</option>
+    <option value="tercero_comercializacion">Tercero, Comercializacion</option>
+		<option value="primero_diseno">Primero, Diseño Grafico</option>
+		<option value="segundo_diseno">Segundo, Diseño Grafico</option>
+		<option value="tercero_diseno">Tercero, Diseño Grafico</option>
+
+	</select>
+
+	<div id="primero_analista-fields" class="additional-fields">
+		<label for="subject1_primero_analista">Subject 1:</label>
+		<input type="checkbox" id="subject1_primero_analista" name="subject1_primero_analista">
+		<label for="subject2_primero_analista">Subject 2:</label>
+		<input type="checkbox" id="subject2_primero_analista" name="subject2_primero_analista">
+		<label for="subject3_primero_analista">Subject 3:</label>
+		<input type="checkbox" id="subject3_primero_analista" name="subject3_primero_analista">
+	</div>
+
+  <div id="segundo_analista-fields" class="additional-fields">
+		<label for="subject1_segundo_analista">Subject 1:</label>
+		<input type="checkbox" id="subject1_segundo_analista" name="subject1_segundo_analista">
+		<label for="subject2_segundo_analista">Subject 2:</label>
+		<input type="checkbox" id="subject2_segundo_analista" name="subject2_segundo_analista">
+		<label for="subject3_segundo_analista">Subject 3:</label>
+		<input type="checkbox" id="subject3_segundo_analista" name="subject3_segundo_analistaa">
+	</div>
+
+  <div id="tercero_analista-fields" class="additional-fields">
+		<label for="subject1_tercero_analista">Subject 1:</label>
+		<input type="checkbox" id="subject1_tercero_analista" name="subject1_tercero_analista">
+		<label for="subject2_tercero_analista">Subject 2:</label>
+		<input type="checkbox" id="subject2_tercero_analista" name="subject2_tercero_analista">
+		<label for="subject3_tercero_analista">Subject 3:</label>
+		<input type="checkbox" id="subject3_tercero_analista" name="subject3_tercero_analista">
+	</div>
+
+	<div id="primero_infraestructura-fields" class="additional-fields">
+		<label for="subject1_primero_infraestructura">Subject 1:</label>
+		<input type="checkbox" id="subject1_primero_infraestructura" name="subject1_primero_infraestructura">
+		<label for="subject2_primero_infraestructura">Subject 2:</label>
+		<input type="checkbox" id="subject2_primero_infraestructura" name="subject2_primero_infraestructura">
+		<label for="subject3_primero_infraestructura">Subject 3:</label>
+		<input type="checkbox" id="subject3_primero_infraestructura" name="subject3_primero_infraestructura">
+	</div>
+
+  <div id="segundo_infraestructura-fields" class="additional-fields">
+		<label for="subject1_segundo_infraestructura">Subject 1:</label>
+		<input type="checkbox" id="subject1_segundo_infraestructura" name="subject1_segundo_infraestructura">
+		<label for="subject2_segundo_infraestructura">Subject 2:</label>
+		<input type="checkbox" id="subject2_segundo_infraestructura" name="subject2_segundo_infraestructura">
+		<label for="subject3_segundo_infraestructura">Subject 3:</label>
+		<input type="checkbox" id="subject3_segundo_infraestructura" name="subject3_segundo_infraestructura">
+	</div>
+
+  <div id="tercero_infraestructura-fields" class="additional-fields">
+		<label for="subject1_tercero_infraestructura">Subject 1:</label>
+		<input type="checkbox" id="subject1_tercero_infraestructura" name="subject1_tercero_infraestructura">
+		<label for="subject2_tercero_infraestructura">Subject 2:</label>
+		<input type="checkbox" id="subject2_tercero_infraestructura" name="subject2_tercero_infraestructura">
+		<label for="subject3_tercero_infraestructura">Subject 3:</label>
+		<input type="checkbox" id="subject3_tercero_infraestructura" name="subject3_tercero_infraestructura">
+	</div>
+
+  <div id="primero_comercializacion-fields" class="additional-fields">
+		<label for="subject1_primero_comercializacion">Subject 1:</label>
+		<input type="checkbox" id="subject1_primero_comercializacion" name="subject1_primero_comercializacion">
+		<label for="subject2_primero_comercializacion">Subject 2:</label>
+		<input type="checkbox" id="subject2_primero_comercializacion" name="subject2_primero_comercializacion">
+		<label for="subject3_primero_comercializacion">Subject 3:</label>
+		<input type="checkbox" id="subject3_primero_comercializacion" name="subject3_primero_comercializacion">
+	</div>
+
+  <div id="segundo_comercializacion-fields" class="additional-fields">
+		<label for="subject1_segundo_comercializacion">Subject 1:</label>
+		<input type="checkbox" id="subject1_segundo_comercializacion" name="subject1_segundo_comercializacion">
+		<label for="subject2_segundo_comercializacion">Subject 2:</label>
+		<input type="checkbox" id="subject2_segundo_comercializacion" name="subject2_segundo_comercializacion">
+		<label for="subject3_segundo_comercializacion">Subject 3:</label>
+		<input type="checkbox" id="subject3_segundo_comercializacion" name="subject3_segundo_comercializacion">
+	</div>
+
+  <div id="tercero_comercializacion-fields" class="additional-fields">
+		<label for="subject1_tercero_comercializacion">Subject 1:</label>
+		<input type="checkbox" id="subject1_tercero_comercializacion" name="subject1_tercero_comercializacion">
+		<label for="subject2_tercero_comercializacion">Subject 2:</label>
+		<input type="checkbox" id="subject2_tercero_comercializacion" name="subject2_tercero_comercializacion">
+		<label for="subject3_tercero_comercializacion">Subject 3:</label>
+		<input type="checkbox" id="subject3_tercero_comercializacion" name="subject3_tercero_comercializacion">
+	</div>
+
+  <div id="primero_diseno-fields" class="additional-fields">
+		<label for="subject1_primero_diseno">Subject 1:</label>
+		<input type="checkbox" id="subject1_primero_diseno" name="subject1_primero_diseno">
+		<label for="subject2_primero_diseno">Subject 2:</label>
+		<input type="checkbox" id="subject2_primero_diseno" name="subject2_primero_diseno">
+		<label for="subject3_primero_diseno">Subject 3:</label>
+		<input type="checkbox" id="subject3_primero_diseno" name="subject3_primero_diseno">
+	</div>
+
+  <div id="segundo_diseno-fields" class="additional-fields">
+		<label for="subject1_segundo_diseno">Subject 1:</label>
+		<input type="checkbox" id="subject1_segundo_diseno" name="subject1_segundo_diseno">
+		<label for="subject2_segundo_diseno">Subject 2:</label>
+		<input type="checkbox" id="subject2_segundo_diseno" name="subject2_segundo_diseno">
+		<label for="subject3_segundo_diseno">Subject 3:</label>
+		<input type="checkbox" id="subject3_segundo_diseno" name="subject3_segundo_diseno">
+	</div>
+
+  <div id="tercero_diseno-fields" class="additional-fields">
+		<label for="subject1_tercero_diseno">Subject 1:</label>
+		<input type="checkbox" id="subject1_tercero_diseno" name="subject1_tercero_diseno">
+		<label for="subject2_tercero_diseno">Subject 2:</label>
+		<input type="checkbox" id="subject2_tercero_diseno" name="subject2_tercero_diseno">
+		<label for="subject3_tercero_diseno">Subject 3:</label>
+		<input type="checkbox" id="subject3_tercero_diseno" name="subject3_tercero_diseno">
+	</div>
+
+	<script>
+		var careerSelect = document.getElementById('career');
+		var additionalFields = document.querySelectorAll('.additional-fields');
+
+		careerSelect.addEventListener('change', function() {
+			var selectedOption = this.options[this.selectedIndex];
+			var selectedValue = selectedOption.value;
+			showAdditionalFields(selectedValue);
+		});
+
+		function showAdditionalFields(career) {
+			additionalFields.forEach(function(field) {
+				if (field.id === career + '-fields') {
+					field.style.display = 'block';
+				} else {
+					field.style.display = 'none';
+				}
+			});
+		}
+	</script>
+</body>
+</html>
+
+  
+    <button type="Enviar">Submit</button>
+  </form>
+  
+  <!-- subject_list.html -->
+  <ul>
+    {% for subject in subjects %}
+      <li>{{ subject }}</li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}

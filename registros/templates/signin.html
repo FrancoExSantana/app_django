@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Superior N°47 Florentino Ameghino</title>
+    <link rel="stylesheet" href="{% static '/styles/home.css' %}">
+</head>
+<body>
+    <main class="container">
+        <h1> Iniciar Sesion </h1>
+
+        {{error}}
+        
+        <form action="/signin/" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button class="buttonB">
+                Aceptar
+            </button>
+    </main>
+</body>
+</html>
+</form>
+
